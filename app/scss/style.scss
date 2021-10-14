@@ -1,3 +1,21 @@
-body {
-  background-color: red;
+@import "vars";
+@import "global";
+
+
+@import "blocks/header";
+@import "blocks/intro";
+
+.Overlay {
+  background-image: -moz-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+  background-image: -webkit-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+  background-image: -ms-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+  opacity: 0.902;
+  position: absolute;
+  left: 0px;
+  top: 9237px;
+  width: 1920px;
+  height: 400px;
+  z-index: 63;
 }
+
+

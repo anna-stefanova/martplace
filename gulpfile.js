@@ -72,7 +72,7 @@ function sass() {
         }))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
-            grid: true
+
         }))
         .pipe(concat('style.min.css'))
 

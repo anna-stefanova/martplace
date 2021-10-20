@@ -1,0 +1,32 @@
+.statistics {
+  background-color: #212225;
+  padding: 95px 0;
+}
+.statistics__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.statistics__item {
+  text-align: center;
+  &-number {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  &-desc {
+    font-size: 18px;
+    line-height: 36px;
+    color: #ffffff;
+  }
+  .yellow {
+    color: #feb71d;
+  }
+  .blue {
+    color: #58c9e9;
+  }
+  .green {
+    color: #77de51;
+  }
+  .red {
+    color: #ff6a6d;
+  }
+}

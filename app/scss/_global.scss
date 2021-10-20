@@ -60,3 +60,21 @@ a {
   border: 1px solid #ffffff;
   cursor: pointer;
 }
+.yellow {
+  color: #feb71d;
+}
+.blue {
+  color: #58c9e9;
+}
+.green {
+  color: #77de51;
+}
+.red {
+  color: #ff6a6d;
+}
+.darkblue {
+  color: $blue;
+}
+.violet {
+  color: #7f4ec2;
+}

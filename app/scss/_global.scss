@@ -32,6 +32,18 @@ a {
   font-size: 30px;
   line-height: 30px;
 }
+.title2 {
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  h2 {
+    color: #000000;
+    margin-bottom: 23px;
+    span {
+      color: $blue;
+    }
+  }
+}
 .hover-effect {
   display: flex;
   align-items: center;

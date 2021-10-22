@@ -43,6 +43,12 @@ a {
       color: $blue;
     }
   }
+  &-desc {
+    max-width: 675px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #555555;
+  }
 }
 .hover-effect {
   display: flex;
@@ -89,4 +95,23 @@ a {
 }
 .violet {
   color: #7f4ec2;
+}
+.blue-btn{
+  button {
+    border: none;
+    outline: none;
+    background-color: $blue;
+    color: #ffffff;
+    padding: 19.5px 33px;
+    border-radius: 27px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  a {
+    background-color: $blue;
+    color: #ffffff;
+    padding: 19.5px 33px;
+    border-radius: 27px;
+    font-size: 16px;
+  }
 }

@@ -1,0 +1,135 @@
+.newest {
+  background-color: $secondary;
+  padding: 120px 0;
+}
+.newest__title {
+  margin-bottom: 30px;
+}
+.newest__categories {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 30px 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(90, 93, 100, 0.1);
+  margin-bottom: 51px;
+  li {
+    display: inline-block;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-right: 7px;
+    height: 32px;
+  }
+  a {
+    color: #747b86;
+    background-color: #f1f3f6;
+    padding: 8px 19px;
+    border-radius: 16px;
+  }
+
+}
+
+.newest__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.products__item {
+  max-width: 361px;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(108, 111, 115, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 31px;
+  &-image {
+    min-height: 230px;
+    background-color: #009688;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    &:hover {
+      .newest__item-buttons {
+        opacity: 0.902;
+      }
+    }
+  }
+  &-buttons {
+    @include hover-effect;
+    min-height: 230px;
+  }
+  &-content {
+    padding: 30px 30px 27px;
+    background-color: #fff;
+    border-bottom: 1px solid #ececec;
+  }
+  &-title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  &-author {
+    @extend .weekly__item-author;
+  }
+  &-name {
+    @extend .weekly__item-name;
+    .avatar {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: #7347c1;
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      margin-right: 7px;
+    }
+  }
+  &-category {
+    color: #7347c1;
+  }
+  &-text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 30px 16px;
+  }
+  &-price {
+    background-color: #e6f1fd;
+    color: $blue;
+    padding: 8px 17px;
+    border-radius: 15px;
+    margin-right: 13px;
+    font-weight: 500;
+  }
+  &-like {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+  &-cart {
+    color: $blue;
+  }
+  &-rate {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+}
+.newest__bottom-btn {
+  display: flex;
+  justify-content: center;
+}
+
+

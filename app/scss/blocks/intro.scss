@@ -1,0 +1,125 @@
+.intro {
+  background-color: #0b31bc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 725px;
+  position: relative;
+}
+
+.intro__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 170px 0 90px;
+  color: #f3f3f8;
+  &-title {
+    font-size: 60px;
+    line-height: 70px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 15px;
+    h1 {
+      font-weight: 600;
+    }
+  }
+  &-desc {
+    font-size: 20px;
+    line-height: 72px;
+    font-weight: 500;
+    margin-bottom: 45px;
+  }
+}
+
+.intro__btn {
+  padding: 20px 31px;
+  border-radius: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff;
+  &-all {
+    background-color: #fff;
+    color: $blue;
+    margin-right: 27px;
+  }
+  &-popular {
+    background-color: #193dc4;
+    color: #ffffff;
+  }
+}
+
+
+.intro__search {
+  width: 100%;
+  perspective: 1140px;
+  &-form {
+    width: 100%;
+    padding: 40px;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    height: 135px;
+    position: relative;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08);
+    &:first-child {
+      transform: translate3d(0px, 40px, -60px);
+    }
+    &:nth-child(2) {
+      transform: translate3d(0px, 53px, -30px);
+    }
+    &:nth-child(3) {
+      transform: translate3d(0px, 66px, 0px);
+    }
+    form {
+      display: flex;
+      label {
+        display: contents;
+      }
+      input {
+        max-width: 613px;
+        width: 100%;
+        padding: 15px 0 15px 25px;
+        border: 1px solid #dcdcdc;
+        border-radius: 4px 0 0 4px;
+        font-size: 16px;
+        color: #676767;
+        &:focus {
+          border-color: darken(#dcdcdc, 15%);
+        }
+      }
+      button {
+        width: 223px;
+        background-color: $blue;
+        border-radius: 4px;
+        color: #ffffff;
+        padding: 18px 0 17px;
+        border: none;
+        outline: 1px solid darken($blue, 10%);
+        margin: 0 0 0 auto;
+        cursor: pointer;
+      }
+    }
+  }
+  .dummy {
+    opacity: 0.502;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+.inputNav {
+  display: inline-block;
+  padding: 18px 20px 17px 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 0 4px 4px 0;
+  margin-left: -1px;
+  color: #555555;
+}
+
+
+
+
+
+
